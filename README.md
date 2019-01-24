@@ -5,7 +5,7 @@ This challenge focuses on classes in JavaScript using the new `class` keyword.
 ## Assignment Description
 
 You already pretty much know all about classes but you're used to seeing them built in the following context:
- 
+
 ```js
 function Person(personAttributes)  {
   this.name = personAttributes.name;
@@ -28,7 +28,7 @@ const fred = new Person({
 ## `prototype-refactor` - Take existing code and make it modern.
 
 * You're going to work with your prototypes assignment you built out yesterday.
-* `Challenge:` **Convert** all of your constructors into ES6 Classes using the `class` and `extends` keywords. You should be able to run your same logs and they should build out the proper expected behaviors.
+* `Challenge:` **Convert** all of your constructors into ES6 Classes using the `class` and `extends` keywords. You should be able to run your same logs and they should build out the proper expected behaviors. 
 
 ## `lambda-classes` - We need a roster of Lambda School personnel. Build it!
 
