@@ -70,6 +70,23 @@ class Instructor extends Person {
     grade(student, subject) {
         return `${student.name} receives a perfect score on ${subject}`;
     }
+    points(student) {
+        if (Math.random() > 0.5) {
+            let tempHolder = Math.floor((Math.random() * 10) + 1);
+            student.grade += tempHolder;
+            if (student.grade > 70) {
+                console.log(`${this.name} has given ${student.name} ${tempHolder} extra points!`);
+                return student.graduate();
+            } else {
+                return `${this.name} has given ${student.name} ${tempHolder} extra points!`
+            }
+        }
+        else {
+            let tempHolder = Math.floor((Math.random() * 10) + 1);
+            student.grade -= tempHolder;
+            return `${this.name} has deducted ${student.name} ${tempHolder} points!`
+        }
+    }
 }
 const testInstructor = new Instructor({
     name: 'Kelly', 
@@ -101,6 +118,7 @@ class Student extends Person {
         this.previousBackground = attributes.previousBackground;
         this.className = attributes.className;
         this.favSubjects = attributes.favSubjects;
+        this.grade = Math.floor((Math.random() * 60) +1);
     }
     listsSubjects() {
         return (this.favSubjects.map((subject) => {
@@ -112,6 +130,9 @@ class Student extends Person {
     }
     sprintChallenge(subject) {
         return `${this.name} has begun sprint challenge on ${subject}`;
+    }
+    graduate () {
+        return `${this.name} has gained sufficient credits to graduate from Lambda School! We wish them all the best in paying off their ISAs!`;
     }
 }
 
