@@ -145,16 +145,16 @@ const testHUMAN = new Humanoid({createdAt: '12/31/1996', dimensions: {length: 2,
       language: 'Elvish',
     });
   
-    console.log(mage.createdAt); // Today's date
-    console.log(archer.dimensions); // { length: 1, width: 2, height: 4 }
-    console.log(swordsman.healthPoints); // 15
-    console.log(mage.name); // Bruce
-    console.log(swordsman.team); // The Round Table
-    console.log(mage.weapons); // Staff of Shamalama
-    console.log(archer.language); // Elvish
-    console.log(archer.greet()); // Lilith offers a greeting in Elvish.
-    console.log(mage.takeDamage()); // Bruce took damage.
-    console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
+    // console.log(mage.createdAt); // Today's date
+    // console.log(archer.dimensions); // { length: 1, width: 2, height: 4 }
+    // console.log(swordsman.healthPoints); // 15
+    // console.log(mage.name); // Bruce
+    // console.log(swordsman.team); // The Round Table
+    // console.log(mage.weapons); // Staff of Shamalama
+    // console.log(archer.language); // Elvish
+    // console.log(archer.greet()); // Lilith offers a greeting in Elvish.
+    // console.log(mage.takeDamage()); // Bruce took damage.
+    // console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
   
   
     // Stretch task: 
@@ -210,12 +210,12 @@ class Villain extends Humanoid {
 const testHERO = new Hero({createdAt: '12/31/1996', dimensions: {length: 2, width: 10, height: 25}, healthPoints: 99, name: 'Tommy', team : 'Red Team', weapons: ['Staff', 'Paper cloth'], language: 'Orkish'});
 const testVIL = new Villain({createdAt: '12/31/1996', dimensions: {length: 2, width: 10, height: 25}, healthPoints: 99, name: 'EvilTommy', team : 'Red Team', weapons: ['Staff', 'Paper cloth'], language: 'Orkish'});
   
-  testHERO.hit(testVIL);
-  testVIL.hit(testHERO);
-  testHERO.hit(testVIL);
-  testHERO.hit(testVIL);
-  testVIL.hit(testHERO);
-  testHERO.hit(testVIL);
-  testVIL.hit(testHERO);
-  testVIL.hit(testHERO);
-  testVIL.hit(testHERO);
+//   testHERO.hit(testVIL);
+//   testVIL.hit(testHERO);
+//   testHERO.hit(testVIL);
+//   testHERO.hit(testVIL);
+//   testVIL.hit(testHERO);
+//   testHERO.hit(testVIL);
+//   testVIL.hit(testHERO);
+//   testVIL.hit(testHERO);
+//   testVIL.hit(testHERO);
